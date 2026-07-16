@@ -1,0 +1,11 @@
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      ::selection {
+        background: #8b5cf6;
+        color: white;
+      }
