@@ -89,3 +89,35 @@ body {
 
   animation-delay: 4s;
 }
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #818CF8 0%, #C084FC 100%);
+  background-size: 200% 100%;
+  background-position: left;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  transition: background-position 0.35s ease;
+}
+
+.view-all-link:hover {
+  background-position: right;
+}
+
+.arrow {
+  transition: transform 0.25s ease;
+}
+
+.view-all-link:hover .arrow {
+  transform: translateX(4px);
+}
