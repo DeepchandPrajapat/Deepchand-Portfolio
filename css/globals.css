@@ -1,11 +1,91 @@
-      html {
-        scroll-behavior: smooth;
-      }
+html {
+  scroll-behavior: smooth;
+}
 
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      ::selection {
-        background: #8b5cf6;
-        color: white;
-      }
+body {
+  font-family: "Inter", sans-serif;
+}
+::selection {
+  background: #8b5cf6;
+  color: white;
+}
+
+.floating-tech {
+  position: absolute;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #090d1a;
+
+  border: 1px solid #1e293b;
+
+  animation: float 6s ease-in-out infinite;
+
+  transition: 0.35s;
+}
+
+.floating-tech:hover {
+  transform: scale(1.08);
+
+  border-color: #8b5cf6;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.tech-1 {
+  top: 20px;
+  left: 30px;
+
+  animation-delay: 0s;
+}
+
+.tech-2 {
+  top: 80px;
+  right: 25px;
+
+  animation-delay: 0.8s;
+}
+
+.tech-3 {
+  top: 170px;
+  left: 0;
+
+  animation-delay: 1.6s;
+}
+
+.tech-4 {
+  top: 250px;
+  right: 40px;
+
+  animation-delay: 2.4s;
+}
+
+.tech-5 {
+  top: 330px;
+  left: 40px;
+
+  animation-delay: 3.2s;
+}
+
+.tech-6 {
+  top: 390px;
+  right: 0;
+
+  animation-delay: 4s;
+}
