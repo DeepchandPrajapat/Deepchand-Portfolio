@@ -495,7 +495,7 @@
 
     <section
       id="experience"
-      class="relative px-4 sm:px-8 lg:px-12 pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 lg:pb-20"
+      class="relative px-4 sm:px-8 lg:px-12 pt-6 sm:pt-8 lg:pt-10 pb-8 lg:pb-10"
     >
       <h2
         class="about-heading mb-6 sm:mb-8 lg:mb-10 text-[15px] sm:text-[16px] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#4A69FF]"
@@ -505,7 +505,7 @@
 
       <div
         id="experience-track"
-        class="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         <!-- Card 1 -->
         <div
@@ -721,7 +721,7 @@
     <!-- ================= PROJECTS ================= -->
     <section
       id="projects"
-      class="relative px-4 sm:px-8 lg:px-12 pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 lg:pb-20"
+      class="relative px-4 sm:px-8 lg:px-12 pt-6 sm:pt-8 lg:pt-10 pb-8 lg:pb-10"
     >
       <div
         class="mb-6 sm:mb-8 lg:mb-10 flex flex-wrap items-center justify-between gap-3"
@@ -855,8 +855,8 @@
               <p
                 class="mb-3.5 sm:mb-4 text-[13px] sm:text-[13.5px] lg:text-[14px] leading-6 text-[#9CA3AF]"
               >
-                AI-powered expense tracker that lets you track daily expenses and provides personalized
-                insights.
+                AI-powered expense tracker that lets you track daily expenses
+                and provides personalized insights.
               </p>
               <div class="mb-4 sm:mb-5 flex flex-wrap gap-2">
                 <span
@@ -918,9 +918,243 @@
       </div>
     </section>
 
+    <!-- ================= SKILLS ================= -->
+    <section
+      id="skills"
+      class="relative px-4 sm:px-8 lg:px-12 pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 lg:pb-20"
+    >
+      <!-- Heading -->
+      <div class="mb-8 flex flex-wrap items-center justify-between gap-3">
+        <h2
+          class="about-heading text-[15px] sm:text-[16px] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#4A69FF]"
+        >
+          Skills
+        </h2>
+
+        <button
+          id="toggle-skills"
+          class="view-all-link flex items-center gap-1.5 text-[15px] sm:text-[16px] font-semibold"
+        >
+          <span>Show All</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+
+      <!-- Skills -->
+      <div class="exp-card">
+        <!-- Visible Skills -->
+        <div class="flex flex-wrap justify-center gap-10 sm:gap-12 lg:gap-14">
+          <!-- Python -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/python.svg"
+              alt="Python"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- FastAPI -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/fastapi.svg"
+              alt="FastAPI"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- openai -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/openai.svg"
+              alt="openai"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- PostgreSQL -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/postgresql.svg"
+              alt="PostgreSQL"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Docker -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/docker.svg"
+              alt="Docker"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Git -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/git.svg"
+              alt="Git"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- GitHub -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/github.svg"
+              alt="GitHub"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Tailwind -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/tailwind.svg"
+              alt="Tailwind CSS"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- JavaScript -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/javascript.svg"
+              alt="JavaScript"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Flask -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/flask.svg"
+              alt="Flask"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+        </div>
+
+        <!-- Hidden skills -->
+        <div
+          id="more-skills"
+          class="mt-10 flex max-h-0 flex-wrap justify-center gap-10 sm:gap-12 lg:gap-14 overflow-hidden opacity-0 transition-all duration-500"
+        >
+          <!-- HTML5 -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/html.svg"
+              alt="HTML5"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- CSS3 -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/css.svg"
+              alt="CSS3"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- C -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/C.svg"
+              alt="C"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- MySQL -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/mysql.svg"
+              alt="MySQL"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- C++ -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/cpp.svg"
+              alt="C++"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Bootstrap -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/bootstrap.svg"
+              alt="Bootstrap"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Linux -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/linux.svg"
+              alt="Linux"
+              class="h-20 w-20 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Scikit-Learn -->
+          <div
+            class="group flex h-16 w-16 items-center justify-center rounded-xl border border-transparent bg-transparent transition-all duration-300 hover:-translate-y-1 hover:border-[#334155] hover:bg-white/[0.03] hover:shadow-[0_0_20px_rgba(99,102,241,.12)]"
+          >
+            <img
+              src="assets/icons/scikit-learn2.svg"
+              alt="Scikit-Learn"
+              class="h-24 w-24 transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/navbar.js"></script>
     <script src="js/typing.js"></script>
     <script src="js/reveal.js"></script>
+    <script src="js/skills.js"></script>
     <script src="js/mobile-navbar.js"></script>
   </body>
 </html>
