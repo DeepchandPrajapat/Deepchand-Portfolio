@@ -24,6 +24,21 @@
   <body
     class="bg-[#030712] text-[#F3F4F6] overflow-x-hidden w-full max-w-[100vw]"
   >
+
+  <!-- ================= PRELOADER ================= -->
+<div
+  id="preloader"
+  class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#090D1A] transition-opacity duration-700"
+>
+  <h1
+    id="greeting"
+    class="select-none text-6xl sm:text-7xl md:text-8xl font-extrabold opacity-0 bg-[linear-gradient(135deg,#1E40AF_0%,#6366F1_50%,#9D178D_100%)] bg-clip-text text-transparent"
+  >
+    नमस्ते
+  </h1>
+</div>
+<div id="page-content" class="opacity-0">
+
     <!-- ================= NAVBAR ================= -->
 
     <nav
@@ -33,7 +48,7 @@
       <div
         class="text-[18px] sm:text-[20px] font-semibold tracking-[0.5px] bg-gradient-to-r from-[#3B82F6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent select-none"
       >
-        DC
+        &lt;/&gt;
       </div>
 
       <ul class="hidden lg:flex items-center gap-[36px]">
@@ -70,12 +85,6 @@
             class="text-[14.5px] font-medium text-white"
           >
             Certifications
-          </a>
-        </li>
-
-        <li>
-          <a href="#resume" class="text-[14.5px] font-medium text-white">
-            Resume
           </a>
         </li>
 
@@ -462,29 +471,21 @@
         </div>
 
         <!-- Right -->
-
         <div
           class="relative order-1 lg:order-2 flex justify-center mb-6 lg:mb-0 about-photo"
         >
+          <!-- Gradient Border -->
           <div
             class="relative rounded-[24px] bg-gradient-to-br from-[#3B82F6] via-[#8B5CF6] to-[#D946EF] p-[2px] w-[140px] sm:w-[170px] md:w-[220px] lg:w-[280px]"
           >
-            <div
-              class="flex aspect-[4/5] w-full flex-col items-center justify-center gap-2 rounded-[22px] bg-[#030712] text-[#6B7280]"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                class="h-7 w-7 lg:h-9 lg:w-9"
-                fill="none"
-                stroke="#4B5A78"
-                stroke-width="1.5"
-              >
-                <circle cx="12" cy="8" r="4" />
-                <path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke-linecap="round" />
-              </svg>
-              <span class="text-[11px] sm:text-[12px] font-medium"
-                >Your Photo</span
-              >
+            <!-- Image -->
+            <div class="overflow-hidden rounded-[22px] bg-[#030712]">
+              <img
+                src="assets/images/.png"
+                alt="Deepchand"
+                class="aspect-[4/5] w-full object-cover transition-transform duration-500 hover:scale-105"
+                draggable="false"
+              />
             </div>
           </div>
         </div>
@@ -1271,7 +1272,7 @@
 
   <!-- Contact Card -->
   <div
-    class="relative mx-auto max-w-[600px] overflow-hidden rounded-[28px] border border-[#1E293B] bg-[#090D1A] p-6 sm:p-10"
+    class="exp-card relative mx-auto max-w-[600px] overflow-hidden rounded-[28px] border border-[#1E293B] bg-[#090D1A] p-6 sm:p-10"
   >
     <!-- Background Glow -->
     <div
@@ -1288,35 +1289,73 @@
       >
         Contact Me
       </h3>
+<!-- Form -->
+<form
+  id="contact-form"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  class="flex flex-col gap-4"
+>
+  <!-- Web3Forms -->
+  <input
+    type="hidden"
+    name="access_key"
+    value="3295b682-923f-40a3-9880-3a47de0946d4"
+  />
 
-      <!-- Form -->
-      <form class="flex flex-col gap-4">
-        <input
-          type="text"
-          placeholder="Your Name"
-          class="w-full rounded-xl border border-[#1E293B] bg-[#0F1526] px-4 py-3.5 text-[14px] text-white placeholder:text-[#6B7A94] outline-none transition-colors focus:border-[#8B5CF6]"
-        />
+  <input
+    type="hidden"
+    name="subject"
+    value="New Portfolio Contact Form"
+  />
 
-        <input
-          type="email"
-          placeholder="Your Email"
-          class="w-full rounded-xl border border-[#1E293B] bg-[#0F1526] px-4 py-3.5 text-[14px] text-white placeholder:text-[#6B7A94] outline-none transition-colors focus:border-[#8B5CF6]"
-        />
+  <input
+    type="hidden"
+    name="from_name"
+    value="Deepchand Portfolio"
+  />
 
-        <textarea
-          rows="5"
-          placeholder="Your Message"
-          class="w-full resize-none rounded-xl border border-[#1E293B] bg-[#0F1526] px-4 py-3.5 text-[14px] text-white placeholder:text-[#6B7A94] outline-none transition-colors focus:border-[#8B5CF6]"
-        ></textarea>
+  <!-- Name -->
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    class="w-full rounded-xl border border-[#1E293B] bg-[#0F1526] px-4 py-3.5 text-[14px] text-white placeholder:text-[#6B7A94] outline-none transition-colors focus:border-[#8B5CF6]"
+  />
 
-        <button
-          type="submit"
-          class="mt-1 w-full rounded-xl bg-[linear-gradient(135deg,#1E40AF_0%,#6366F1_50%,#9D178D_100%)] py-3.5 text-[14.5px] font-semibold text-white transition-transform hover:-translate-y-[2px]"
-        >
-          Send Message
-        </button>
-      </form>
+  <!-- Email -->
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    class="w-full rounded-xl border border-[#1E293B] bg-[#0F1526] px-4 py-3.5 text-[14px] text-white placeholder:text-[#6B7A94] outline-none transition-colors focus:border-[#8B5CF6]"
+  />
 
+  <!-- Message -->
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Your Message"
+    required
+    class="w-full resize-none rounded-xl border border-[#1E293B] bg-[#0F1526] px-4 py-3.5 text-[14px] text-white placeholder:text-[#6B7A94] outline-none transition-colors focus:border-[#8B5CF6]"
+  ></textarea>
+
+  <!-- Submit -->
+  <button
+    type="submit"
+    class="mt-1 w-full rounded-xl bg-[linear-gradient(135deg,#1E40AF_0%,#6366F1_50%,#9D178D_100%)] py-3.5 text-[14.5px] font-semibold text-white transition-transform hover:-translate-y-[2px]"
+  >
+    Send Message
+  </button>
+
+  <!-- Status -->
+  <p
+    id="result"
+    class="mt-2 text-center text-sm text-[#94A3B8]"
+  ></p>
+</form>
       <!-- Social Icons -->
       <div class="mt-7 flex items-center justify-center gap-4">
 
@@ -1373,11 +1412,14 @@
   </div>
 </section>
 </section>
+</div>
+    <script src="js/preloader.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/typing.js"></script>
     <script src="js/reveal.js"></script>
     <script src="js/skills.js"></script>
     <script src="js/certification.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/mobile-navbar.js"></script>
   </body>
 </html>

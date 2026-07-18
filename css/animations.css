@@ -60,3 +60,20 @@
   opacity: 1;
   transform: translateY(0);
 }
+/* ================= PRELOADER ================= */
+
+#greeting {
+    transition:
+        opacity .35s ease,
+        transform .35s ease;
+    transform: translateY(12px);
+}
+
+#greeting.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#page-content {
+    transition: opacity .8s ease;
+}
